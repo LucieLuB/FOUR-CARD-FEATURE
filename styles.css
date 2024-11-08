@@ -9,25 +9,68 @@ html {
   font-size: 62.5%; /* 1rem = 10px */
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; /*flex-start para no tener todo el ancho de los elementos*/
-
-  font-family: var(--poppinsFont);
-  margin: 2rem;
-  background-color: var(--veryLightGrayColor);
-}
-
 :root {
   --redColor: hsl(0, 78%, 62%);
   --cyanColor: hsl(180, 62%, 55%);
   --orangeColor: hsl(34, 97%, 64%);
   --blueColor: hsl(212, 86%, 64%);
-  --darkBlueColor: hsl(234, 12%, 34%);
+  --darkBlueColor: rgb(76, 78, 97);
   --grayishBlueColor: hsl(229, 6%, 66%);
   --veryLightGrayColor: hsl(0, 0%, 98%);
 
   --poppinsFont: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /*flex-start para no tener todo el ancho de los elementos*/
+  font-family: var(--poppinsFont);
+  margin: 2rem;
+  background-color: var(--veryLightGrayColor);
+  color: var(--darkBlueColor);
+  text-align: center;
+}
+
+.container {
+}
+
+.container__h1 {
+  margin-top: 3rem;
+  font-weight: 300;
+}
+
+.container__h2 {
+  font-size: 2em;
+}
+
+.container__introduction {
+  font-size: 1.2rem;
+  margin: 1rem 0 4rem 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(76, 78, 97, 0.1);
+  padding: 2rem;
+  text-align: left;
+  border-radius: 8px;
+}
+
+.card__h3 {
+  font-size: 1.6rem;
+}
+
+.card__text {
+  font-size: 1.4rem;
+}
+
+.card .card__img {
+  width: 50px;
+  margin-left: auto;
 }
